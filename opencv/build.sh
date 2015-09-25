@@ -9,10 +9,10 @@ fi
 mkdir build
 cd build
 cmake                                                               \
-    -DPYTHON_EXECUTABLE=$PREFIX/bin/python                          \
-    -DPYTHON_INCLUDE_DIR=$PREFIX/include/python2.7/                 \
-    -DPYTHON_LIBRARY=$PREFIX/lib/$PY_LIB                            \
-    -DPYTHON_PACKAGES_PATH=$PREFIX/lib/python2.7/site-packages/     \
+    -DPYTHON2_EXECUTABLE=$PREFIX/bin/python                          \
+    -DPYTHON2_INCLUDE_DIR=$PREFIX/include/python2.7/                 \
+    -DPYTHON2_LIBRARY=$PREFIX/lib/$PY_LIB                            \
+    -DPYTHON2_PACKAGES_PATH=$PREFIX/lib/python2.7/site-packages/     \
     -DCMAKE_INSTALL_PREFIX=$PREFIX                                  \
     -DWITH_CUDA=OFF                                                 \
     -DWITH_AVFOUNDATION=OFF                                         \

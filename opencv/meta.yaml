@@ -1,11 +1,11 @@
 # Tested on Mac OS X 10.9 using clang compiler provided by XCode
 package:
     name: opencv
-    version: 2.4.9
+    version: 3.0.0
 
 source:
-    fn: opencv-2.4.9.zip
-    url: http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip
+    fn: opencv-3.0.0.zip
+    url: http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/3.0.0/opencv-3.0.0.zip
 
 build:
     number: 0
@@ -27,7 +27,6 @@ requirements:
 test:
     imports:
       - cv2
-      - cv2.cv
 
 about:
     home: http://opencv.org/
