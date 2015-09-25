@@ -1,0 +1,364 @@
+Removing old build environment
+Removing old work directory
+BUILD START: pypot-2.9.1-nppy27_0
+Fetching package metadata: ......
+Solving package specifications: .patching file MANIFEST.in
+running install
+running bdist_egg
+running egg_info
+writing requirements to pypot.egg-info/requires.txt
+writing pypot.egg-info/PKG-INFO
+writing top-level names to pypot.egg-info/top_level.txt
+writing dependency_links to pypot.egg-info/dependency_links.txt
+writing entry points to pypot.egg-info/entry_points.txt
+reading manifest file 'pypot.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'pypot.egg-info/SOURCES.txt'
+installing library code to build/bdist.macosx-10.5-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/pypot
+copying pypot/__init__.py -> build/lib/pypot
+copying pypot/_version.py -> build/lib/pypot
+copying pypot/kinematics.py -> build/lib/pypot
+creating build/lib/pypot/dynamixel
+copying pypot/dynamixel/__init__.py -> build/lib/pypot/dynamixel
+copying pypot/dynamixel/controller.py -> build/lib/pypot/dynamixel
+copying pypot/dynamixel/conversion.py -> build/lib/pypot/dynamixel
+copying pypot/dynamixel/error.py -> build/lib/pypot/dynamixel
+copying pypot/dynamixel/motor.py -> build/lib/pypot/dynamixel
+copying pypot/dynamixel/syncloop.py -> build/lib/pypot/dynamixel
+creating build/lib/pypot/primitive
+copying pypot/primitive/__init__.py -> build/lib/pypot/primitive
+copying pypot/primitive/manager.py -> build/lib/pypot/primitive
+copying pypot/primitive/move.py -> build/lib/pypot/primitive
+copying pypot/primitive/primitive.py -> build/lib/pypot/primitive
+copying pypot/primitive/utils.py -> build/lib/pypot/primitive
+creating build/lib/pypot/robot
+copying pypot/robot/__init__.py -> build/lib/pypot/robot
+copying pypot/robot/config.py -> build/lib/pypot/robot
+copying pypot/robot/controller.py -> build/lib/pypot/robot
+copying pypot/robot/io.py -> build/lib/pypot/robot
+copying pypot/robot/motor.py -> build/lib/pypot/robot
+copying pypot/robot/remote.py -> build/lib/pypot/robot
+copying pypot/robot/robot.py -> build/lib/pypot/robot
+copying pypot/robot/sensor.py -> build/lib/pypot/robot
+creating build/lib/pypot/sensor
+copying pypot/sensor/__init__.py -> build/lib/pypot/sensor
+copying pypot/sensor/optibridge.py -> build/lib/pypot/sensor
+copying pypot/sensor/optitrack.py -> build/lib/pypot/sensor
+creating build/lib/pypot/server
+copying pypot/server/__init__.py -> build/lib/pypot/server
+copying pypot/server/httpserver.py -> build/lib/pypot/server
+copying pypot/server/rest.py -> build/lib/pypot/server
+copying pypot/server/server.py -> build/lib/pypot/server
+copying pypot/server/snap.py -> build/lib/pypot/server
+copying pypot/server/zmqserver.py -> build/lib/pypot/server
+creating build/lib/pypot/tools
+copying pypot/tools/__init__.py -> build/lib/pypot/tools
+copying pypot/tools/dxl_reset.py -> build/lib/pypot/tools
+creating build/lib/pypot/utils
+copying pypot/utils/__init__.py -> build/lib/pypot/utils
+copying pypot/utils/appdirs.py -> build/lib/pypot/utils
+copying pypot/utils/interpolation.py -> build/lib/pypot/utils
+copying pypot/utils/pypot_time.py -> build/lib/pypot/utils
+copying pypot/utils/stoppablethread.py -> build/lib/pypot/utils
+copying pypot/utils/trajectory.py -> build/lib/pypot/utils
+creating build/lib/pypot/vrep
+copying pypot/vrep/__init__.py -> build/lib/pypot/vrep
+copying pypot/vrep/controller.py -> build/lib/pypot/vrep
+copying pypot/vrep/io.py -> build/lib/pypot/vrep
+creating build/lib/pypot/dynamixel/io
+copying pypot/dynamixel/io/__init__.py -> build/lib/pypot/dynamixel/io
+copying pypot/dynamixel/io/abstract_io.py -> build/lib/pypot/dynamixel/io
+copying pypot/dynamixel/io/io.py -> build/lib/pypot/dynamixel/io
+copying pypot/dynamixel/io/io_320.py -> build/lib/pypot/dynamixel/io
+creating build/lib/pypot/dynamixel/protocol
+copying pypot/dynamixel/protocol/__init__.py -> build/lib/pypot/dynamixel/protocol
+copying pypot/dynamixel/protocol/v1.py -> build/lib/pypot/dynamixel/protocol
+copying pypot/dynamixel/protocol/v2.py -> build/lib/pypot/dynamixel/protocol
+creating build/lib/pypot/sensor/camera
+copying pypot/sensor/camera/__init__.py -> build/lib/pypot/sensor/camera
+copying pypot/sensor/camera/abstractcam.py -> build/lib/pypot/sensor/camera
+copying pypot/sensor/camera/opencvcam.py -> build/lib/pypot/sensor/camera
+copying pypot/sensor/camera/rpicam.py -> build/lib/pypot/sensor/camera
+creating build/lib/pypot/sensor/imagefeature
+copying pypot/sensor/imagefeature/__init__.py -> build/lib/pypot/sensor/imagefeature
+copying pypot/sensor/imagefeature/blob.py -> build/lib/pypot/sensor/imagefeature
+copying pypot/sensor/imagefeature/face.py -> build/lib/pypot/sensor/imagefeature
+copying pypot/sensor/imagefeature/marker.py -> build/lib/pypot/sensor/imagefeature
+creating build/lib/pypot/sensor/kinect
+copying pypot/sensor/kinect/__init__.py -> build/lib/pypot/sensor/kinect
+copying pypot/sensor/kinect/sensor.py -> build/lib/pypot/sensor/kinect
+creating build/lib/pypot/tools/herborist
+copying pypot/tools/herborist/__init__.py -> build/lib/pypot/tools/herborist
+copying pypot/tools/herborist/herborist.py -> build/lib/pypot/tools/herborist
+creating build/lib/pypot/vrep/remoteApiBindings
+copying pypot/vrep/remoteApiBindings/__init__.py -> build/lib/pypot/vrep/remoteApiBindings
+copying pypot/vrep/remoteApiBindings/vrep.py -> build/lib/pypot/vrep/remoteApiBindings
+copying pypot/vrep/remoteApiBindings/vrepConst.py -> build/lib/pypot/vrep/remoteApiBindings
+creating build/lib/pypot/server/snap_projects
+copying pypot/server/snap_projects/pypot-snap-blocks.xml -> build/lib/pypot/server/snap_projects
+copying pypot/server/snap_projects/pypot-snap-record-orchestration-demo.xml -> build/lib/pypot/server/snap_projects
+creating build/lib/pypot/vrep/child_script
+copying pypot/vrep/child_script/inject_code.lua -> build/lib/pypot/vrep/child_script
+copying pypot/vrep/child_script/timer.lua -> build/lib/pypot/vrep/child_script
+copying pypot/tools/herborist/herborist.ui -> build/lib/pypot/tools/herborist
+copying pypot/vrep/remoteApiBindings/vrepProEduV301XX-LicenseAgreement.txt -> build/lib/pypot/vrep/remoteApiBindings
+creating build/lib/pypot/vrep/remoteApiBindings/lib
+creating build/lib/pypot/vrep/remoteApiBindings/lib/linux
+creating build/lib/pypot/vrep/remoteApiBindings/lib/linux/32Bit
+copying pypot/vrep/remoteApiBindings/lib/linux/32Bit/remoteApi.so -> build/lib/pypot/vrep/remoteApiBindings/lib/linux/32Bit
+creating build/lib/pypot/vrep/remoteApiBindings/lib/linux/64Bit
+copying pypot/vrep/remoteApiBindings/lib/linux/64Bit/remoteApi.so -> build/lib/pypot/vrep/remoteApiBindings/lib/linux/64Bit
+creating build/lib/pypot/vrep/remoteApiBindings/lib/mac
+creating build/lib/pypot/vrep/remoteApiBindings/lib/mac/64Bit
+copying pypot/vrep/remoteApiBindings/lib/mac/64Bit/remoteApi.dylib -> build/lib/pypot/vrep/remoteApiBindings/lib/mac/64Bit
+creating build/lib/pypot/vrep/remoteApiBindings/lib/windows
+creating build/lib/pypot/vrep/remoteApiBindings/lib/windows/32Bit
+copying pypot/vrep/remoteApiBindings/lib/windows/32Bit/remoteApi.dll -> build/lib/pypot/vrep/remoteApiBindings/lib/windows/32Bit
+creating build/lib/pypot/vrep/remoteApiBindings/lib/windows/64Bit
+copying pypot/vrep/remoteApiBindings/lib/windows/64Bit/remoteApi.dll -> build/lib/pypot/vrep/remoteApiBindings/lib/windows/64Bit
+creating build/bdist.macosx-10.5-x86_64
+creating build/bdist.macosx-10.5-x86_64/egg
+creating build/bdist.macosx-10.5-x86_64/egg/pypot
+copying build/lib/pypot/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot
+copying build/lib/pypot/_version.py -> build/bdist.macosx-10.5-x86_64/egg/pypot
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+copying build/lib/pypot/dynamixel/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+copying build/lib/pypot/dynamixel/controller.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+copying build/lib/pypot/dynamixel/conversion.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+copying build/lib/pypot/dynamixel/error.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io
+copying build/lib/pypot/dynamixel/io/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io
+copying build/lib/pypot/dynamixel/io/abstract_io.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io
+copying build/lib/pypot/dynamixel/io/io.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io
+copying build/lib/pypot/dynamixel/io/io_320.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io
+copying build/lib/pypot/dynamixel/motor.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol
+copying build/lib/pypot/dynamixel/protocol/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol
+copying build/lib/pypot/dynamixel/protocol/v1.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol
+copying build/lib/pypot/dynamixel/protocol/v2.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol
+copying build/lib/pypot/dynamixel/syncloop.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel
+copying build/lib/pypot/kinematics.py -> build/bdist.macosx-10.5-x86_64/egg/pypot
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+copying build/lib/pypot/primitive/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+copying build/lib/pypot/primitive/manager.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+copying build/lib/pypot/primitive/move.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+copying build/lib/pypot/primitive/primitive.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+copying build/lib/pypot/primitive/utils.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/primitive
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/config.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/controller.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/io.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/motor.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/remote.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/robot.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+copying build/lib/pypot/robot/sensor.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/robot
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/sensor
+copying build/lib/pypot/sensor/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera
+copying build/lib/pypot/sensor/camera/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera
+copying build/lib/pypot/sensor/camera/abstractcam.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera
+copying build/lib/pypot/sensor/camera/opencvcam.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera
+copying build/lib/pypot/sensor/camera/rpicam.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature
+copying build/lib/pypot/sensor/imagefeature/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature
+copying build/lib/pypot/sensor/imagefeature/blob.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature
+copying build/lib/pypot/sensor/imagefeature/face.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature
+copying build/lib/pypot/sensor/imagefeature/marker.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/kinect
+copying build/lib/pypot/sensor/kinect/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/kinect
+copying build/lib/pypot/sensor/kinect/sensor.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/kinect
+copying build/lib/pypot/sensor/optibridge.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor
+copying build/lib/pypot/sensor/optitrack.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/sensor
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/server
+copying build/lib/pypot/server/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+copying build/lib/pypot/server/httpserver.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+copying build/lib/pypot/server/rest.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+copying build/lib/pypot/server/server.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+copying build/lib/pypot/server/snap.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/server/snap_projects
+copying build/lib/pypot/server/snap_projects/pypot-snap-blocks.xml -> build/bdist.macosx-10.5-x86_64/egg/pypot/server/snap_projects
+copying build/lib/pypot/server/snap_projects/pypot-snap-record-orchestration-demo.xml -> build/bdist.macosx-10.5-x86_64/egg/pypot/server/snap_projects
+copying build/lib/pypot/server/zmqserver.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/server
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/tools
+copying build/lib/pypot/tools/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/tools
+copying build/lib/pypot/tools/dxl_reset.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/tools
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist
+copying build/lib/pypot/tools/herborist/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist
+copying build/lib/pypot/tools/herborist/herborist.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist
+copying build/lib/pypot/tools/herborist/herborist.ui -> build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/appdirs.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/interpolation.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/pypot_time.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/stoppablethread.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+copying build/lib/pypot/utils/trajectory.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/utils
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep
+copying build/lib/pypot/vrep/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/child_script
+copying build/lib/pypot/vrep/child_script/inject_code.lua -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/child_script
+copying build/lib/pypot/vrep/child_script/timer.lua -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/child_script
+copying build/lib/pypot/vrep/controller.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep
+copying build/lib/pypot/vrep/io.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings
+copying build/lib/pypot/vrep/remoteApiBindings/__init__.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/linux
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/linux/32Bit
+copying build/lib/pypot/vrep/remoteApiBindings/lib/linux/32Bit/remoteApi.so -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/linux/32Bit
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/linux/64Bit
+copying build/lib/pypot/vrep/remoteApiBindings/lib/linux/64Bit/remoteApi.so -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/linux/64Bit
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/mac
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/mac/64Bit
+copying build/lib/pypot/vrep/remoteApiBindings/lib/mac/64Bit/remoteApi.dylib -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/mac/64Bit
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/windows
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/windows/32Bit
+copying build/lib/pypot/vrep/remoteApiBindings/lib/windows/32Bit/remoteApi.dll -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/windows/32Bit
+creating build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/windows/64Bit
+copying build/lib/pypot/vrep/remoteApiBindings/lib/windows/64Bit/remoteApi.dll -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/lib/windows/64Bit
+copying build/lib/pypot/vrep/remoteApiBindings/vrep.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings
+copying build/lib/pypot/vrep/remoteApiBindings/vrepConst.py -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings
+copying build/lib/pypot/vrep/remoteApiBindings/vrepProEduV301XX-LicenseAgreement.txt -> build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/_version.py to _version.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/controller.py to controller.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/conversion.py to conversion.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/error.py to error.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io/abstract_io.py to abstract_io.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io/io.py to io.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/io/io_320.py to io_320.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/motor.py to motor.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol/v1.py to v1.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/protocol/v2.py to v2.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/dynamixel/syncloop.py to syncloop.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/kinematics.py to kinematics.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/primitive/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/primitive/manager.py to manager.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/primitive/move.py to move.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/primitive/primitive.py to primitive.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/primitive/utils.py to utils.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/config.py to config.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/controller.py to controller.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/io.py to io.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/motor.py to motor.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/remote.py to remote.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/robot.py to robot.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/robot/sensor.py to sensor.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera/abstractcam.py to abstractcam.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera/opencvcam.py to opencvcam.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/camera/rpicam.py to rpicam.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature/blob.py to blob.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature/face.py to face.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/imagefeature/marker.py to marker.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/kinect/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/kinect/sensor.py to sensor.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/optibridge.py to optibridge.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/sensor/optitrack.py to optitrack.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/httpserver.py to httpserver.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/rest.py to rest.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/server.py to server.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/snap.py to snap.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/server/zmqserver.py to zmqserver.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/tools/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/tools/dxl_reset.py to dxl_reset.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/tools/herborist/herborist.py to herborist.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/appdirs.py to appdirs.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/interpolation.py to interpolation.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/pypot_time.py to pypot_time.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/stoppablethread.py to stoppablethread.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/utils/trajectory.py to trajectory.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/controller.py to controller.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/io.py to io.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/__init__.py to __init__.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/vrep.py to vrep.pyc
+byte-compiling build/bdist.macosx-10.5-x86_64/egg/pypot/vrep/remoteApiBindings/vrepConst.py to vrepConst.pyc
+creating build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/PKG-INFO -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/SOURCES.txt -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/dependency_links.txt -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/entry_points.txt -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/not-zip-safe -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/requires.txt -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+copying pypot.egg-info/top_level.txt -> build/bdist.macosx-10.5-x86_64/egg/EGG-INFO
+writing build/bdist.macosx-10.5-x86_64/egg/EGG-INFO/native_libs.txt
+creating dist
+creating 'dist/pypot-2.9.1-py2.7.egg' and adding 'build/bdist.macosx-10.5-x86_64/egg' to it
+removing 'build/bdist.macosx-10.5-x86_64/egg' (and everything under it)
+Processing pypot-2.9.1-py2.7.egg
+creating /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages/pypot-2.9.1-py2.7.egg
+Extracting pypot-2.9.1-py2.7.egg to /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages
+Adding pypot 2.9.1 to easy-install.pth file
+Installing poppy-motor-reset script to /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/bin
+Installing herborist script to /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/bin
+
+Installed /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages/pypot-2.9.1-py2.7.egg
+Processing dependencies for pypot==2.9.1
+Searching for scipy==0.16.0
+Best match: scipy 0.16.0
+Adding scipy 0.16.0 to easy-install.pth file
+
+Using /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages
+Searching for enum34==1.0.4
+Best match: enum34 1.0.4
+Adding enum34 1.0.4 to easy-install.pth file
+
+Using /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages
+Searching for pyserial==2.7
+Best match: pyserial 2.7
+Adding pyserial 2.7 to easy-install.pth file
+
+Using /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages
+Searching for numpy==1.9.3
+Best match: numpy 1.9.3
+Adding numpy 1.9.3 to easy-install.pth file
+
+Using /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages
+Finished processing dependencies for pypot==2.9.1
+
+The following NEW packages will be INSTALLED:
+
+    enum34:         1.0.4-py27_0     
+    numpy:          1.9.3-py27_0     
+    openssl:        1.0.1k-1         
+    pip:            7.1.2-py27_0     
+    pyserial:       2.7-py27_0       
+    python:         2.7.10-1         
+    readline:       6.2-2            
+    scipy:          0.16.0-np19py27_1
+    setuptools:     18.1-py27_0      
+    setuptools-git: 1.1-py27_0       
+    sqlite:         3.8.4.1-1        
+    tk:             8.5.18-0         
+    wheel:          0.26.0-py27_0    
+    zlib:           1.2.8-0          
+
+Linking packages ...
+[                    ]|                                                  |   0%[openssl-1.0.1k      ]|                                                  |   0%[readline-6.2        ]|###                                               |   7%[sqlite-3.8.4.1      ]|#######                                           |  14%[tk-8.5.18           ]|##########                                        |  21%[zlib-1.2.8          ]|##############                                    |  28%[enum34-1.0.4        ]|#################                                 |  35%[numpy-1.9.3         ]|#####################                             |  42%[pyserial-2.7        ]|#########################                         |  50%[python-2.7.10       ]|############################                      |  57%[scipy-0.16.0        ]|################################                  |  64%[setuptools-18.1     ]|###################################               |  71%[setuptools-git-1.1  ]|#######################################           |  78%[wheel-0.26.0        ]|##########################################        |  85%[pip-7.1.2           ]|##############################################    |  92%[      COMPLETE      ]|##################################################| 100%
+Removing old work directory
+Source cache directory is: /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/conda-bld/src_cache
+Found source in cache: pypot-2.9.1.tar.gz
+Extracting download
+Applying patch: u'/Users/pierrerouanet/dev/conda-recipes/pypot/manifest.patch'
+Package: pypot-2.9.1-nppy27_0
+source tree in: /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/conda-bld/work/pypot-2.9.1
+found egg dir: /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages/pypot-2.9.1-py2.7.egg
+number of files: 142
+Fixing permissions
+Fixing linking of libremoteApi.1.dylib in /Users/pierrerouanet/.pyenv/versions/miniconda-3.16.0/envs/_build/lib/python2.7/site-packages/pypot/vrep/remoteApiBindings/lib/mac/64Bit/remoteApi.dylib
