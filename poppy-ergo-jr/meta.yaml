@@ -1,0 +1,66 @@
+package:
+  name: poppy-ergo-jr
+  version: "1.2.0"
+
+source:
+  fn: poppy-ergo-jr-1.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/poppy-ergo-jr/poppy-ergo-jr-1.2.0.tar.gz
+  md5: 8666f074cb2ed7d604df21dfde299198
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - poppy-ergo-jr = poppy-ergo-jr:main
+    #
+    # Would create an entry point called poppy-ergo-jr that calls poppy-ergo-jr.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pypot
+    - poppy-creature
+    - setuptools-git
+
+  run:
+    - python
+    - pypot
+    - poppy-creature
+
+test:
+  # Python imports
+  imports:
+    - poppy_ergo_jr
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/poppy-project/poppy-ergo-jr
+  license: GNU GENERAL PUBLIC LICENSE Version 3
+  summary: ' Poppy Ergo Jr Software Library'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
