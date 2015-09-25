@@ -12,7 +12,7 @@ import matplotlib._tri
 import matplotlib.backends._backend_agg
 import matplotlib.ft2font
 import matplotlib.ttconv
-import matplotlib.backends._tkagg
+# import matplotlib.backends._tkagg
 
 import pylab
 import mpl_toolkits

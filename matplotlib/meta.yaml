@@ -7,12 +7,12 @@ source:
   url: https://downloads.sourceforge.net/project/matplotlib/matplotlib/matplotlib-1.4.3/matplotlib-1.4.3.tar.gz
   md5: 67a28a359af4919896d1ec74b6e6b3ce
 
-  patches:
-    - setupext.patch
-    - cfg.patch
-    - cfg_qt4agg.patch    [not osx]
-    - rctmp_pyside.patch  [not osx]
-    - osx-tk.patch        [osx]
+  # patches:
+  #   - setupext.patch
+  #   - cfg.patch
+  #   - cfg_qt4agg.patch    [not osx]
+  #   - rctmp_pyside.patch  [not osx]
+  #   - osx-tk.patch        [osx]
 
 requirements:
   build:
@@ -24,11 +24,12 @@ requirements:
     - nose
     - pyparsing
     - pytz
-    - py2cairo            [linux and py2k]
+    # - py2cairo            [linux and py2k]
     - tornado
     - libpng
-    - zlib                [win]
-    - pyqt                [not osx]
+    # - zlib                [win]
+    # - pyqt                [not osx]
+    - mock
   run:
     - python
     - numpy
@@ -36,9 +37,9 @@ requirements:
     - freetype            [unix]
     - pytz
     - pyparsing
-    - py2cairo            [linux and py2k]
+    # - py2cairo            [linux and py2k]
     - libpng              [unix]
-    - pyqt                [not osx]
+    # - pyqt                [not osx]
 
 about:
   home: http://matplotlib.sourceforge.net/
