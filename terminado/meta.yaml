@@ -1,24 +1,25 @@
 package:
-  name: mistune
-  version: !!str 0.7.1
+  name: terminado
+  version: "0.5"
 
 source:
-  fn: mistune-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.1.tar.gz
-  md5: 057bc28bf629d6a1283d680a34ed9d0f
+  fn: terminado-0.5.tar.gz
+  url: https://pypi.python.org/packages/source/t/terminado/terminado-0.5.tar.gz
+  md5: e992c6262a5f4c8952fee93da31a067e
 #  patches:
    # List any patch files here
    # - fix.patch
 
 # build:
-  #preserve_egg_dir: True
-  #entry_points:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - mistune = mistune:main
+    # - terminado = terminado:main
     #
-    # Would create an entry point called mistune that calls mistune.main()
+    # Would create an entry point called terminado that calls terminado.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -28,17 +29,21 @@ source:
 requirements:
   build:
     - python
-    - setuptools
+    - ptyprocess
+    - tornado
 
   run:
     - python
+    - ptyprocess
+    - tornado
 
 test:
   # Python imports
   imports:
-    - mistune
+    - terminado
+    - terminado.tests
 
-  #commands:
+  # commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -51,9 +56,9 @@ test:
     # - nose
 
 about:
-  home: https://github.com/lepture/mistune
-  license:  BSD License
-  summary: 'The fastest markdown parser in pure Python'
+  home: https://github.com/takluyver/terminado
+  license: BSD License
+  summary: 'Terminals served to term.js using Tornado websockets'
 
 # See
 # http://docs.continuum.io/conda/build.html for

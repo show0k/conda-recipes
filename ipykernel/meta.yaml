@@ -1,24 +1,25 @@
 package:
-  name: mistune
-  version: !!str 0.7.1
+  name: ipykernel
+  version: "4.0.3"
 
 source:
-  fn: mistune-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.1.tar.gz
-  md5: 057bc28bf629d6a1283d680a34ed9d0f
+  fn: ipykernel-4.0.3.tar.gz
+  url: https://pypi.python.org/packages/source/i/ipykernel/ipykernel-4.0.3.tar.gz
+  md5: 86b6a392e5ca727284220ea0034ec4d5
 #  patches:
    # List any patch files here
    # - fix.patch
 
 # build:
-  #preserve_egg_dir: True
-  #entry_points:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - mistune = mistune:main
+    # - ipykernel = ipykernel:main
     #
-    # Would create an entry point called mistune that calls mistune.main()
+    # Would create an entry point called ipykernel that calls ipykernel.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -28,17 +29,29 @@ source:
 requirements:
   build:
     - python
-    - setuptools
+    - ipython
+    - traitlets
+    - jupyter_client
 
   run:
     - python
+    - ipython
+    - traitlets
+    - jupyter_client
+    - mock
 
 test:
   # Python imports
   imports:
-    - mistune
+    - ipykernel
+    - ipykernel.comm
+    - ipykernel.gui
+    - ipykernel.inprocess
+    - ipykernel.inprocess.tests
+    - ipykernel.pylab
+    - ipykernel.tests
 
-  #commands:
+  # commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -51,9 +64,9 @@ test:
     # - nose
 
 about:
-  home: https://github.com/lepture/mistune
-  license:  BSD License
-  summary: 'The fastest markdown parser in pure Python'
+  home: http://ipython.org
+  license: BSD License
+  summary: 'IPython Kernel for Jupyter'
 
 # See
 # http://docs.continuum.io/conda/build.html for

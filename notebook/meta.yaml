@@ -1,0 +1,107 @@
+package:
+  name: notebook
+  version: "4.0.5"
+
+source:
+  fn: notebook-4.0.5.tgz
+  url: https://pypi.python.org/packages/source/n/notebook/notebook-4.0.5.tgz
+  md5: efc9563674c099b1868f024a8fc75948
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - notebook = notebook:main
+    #
+    # Would create an entry point called notebook that calls notebook.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - jinja2
+    - tornado
+    - ipython_genutils
+    - traitlets
+    - jupyter_core
+    - jupyter_client
+    - nbformat
+    - nbconvert
+    - ipykernel
+
+  run:
+    - python
+    - jinja2
+    - tornado
+    - ipython_genutils
+    - traitlets
+    - jupyter_core
+    - jupyter_client
+    - nbformat
+    - nbconvert
+    - ipykernel
+    - terminado
+
+test:
+  # Python imports
+  imports:
+    - notebook
+    - notebook.auth
+    - notebook.auth.tests
+    - notebook.base
+    - notebook.edit
+    - notebook.files
+    - notebook.kernelspecs
+    - notebook.nbconvert
+    - notebook.nbconvert.tests
+    - notebook.notebook
+    - notebook.services
+    - notebook.services.api
+    - notebook.services.config
+    - notebook.services.config.tests
+    - notebook.services.contents
+    - notebook.services.contents.tests
+    - notebook.services.kernels
+    - notebook.services.kernels.tests
+    - notebook.services.kernelspecs
+    - notebook.services.kernelspecs.tests
+    - notebook.services.nbconvert
+    - notebook.services.nbconvert.tests
+    - notebook.services.security
+    - notebook.services.sessions
+    - notebook.services.sessions.tests
+    - notebook.terminal
+    - notebook.tests
+    - notebook.tree
+    - notebook.tree.tests
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://jupyter.org
+  license: BSD License
+  summary: 'A web-based notebook environment for interactive computing'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

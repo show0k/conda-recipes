@@ -1,24 +1,25 @@
 package:
-  name: mistune
-  version: !!str 0.7.1
+  name: ipywidgets
+  version: "4.0.3"
 
 source:
-  fn: mistune-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.1.tar.gz
-  md5: 057bc28bf629d6a1283d680a34ed9d0f
+  fn: ipywidgets-4.0.3.tar.gz
+  url: https://pypi.python.org/packages/source/i/ipywidgets/ipywidgets-4.0.3.tar.gz
+  md5: 85163c827ac61ef1f06b2b907561255d
 #  patches:
    # List any patch files here
    # - fix.patch
 
 # build:
-  #preserve_egg_dir: True
-  #entry_points:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - mistune = mistune:main
+    # - ipywidgets = ipywidgets:main
     #
-    # Would create an entry point called mistune that calls mistune.main()
+    # Would create an entry point called ipywidgets that calls ipywidgets.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -28,17 +29,28 @@ source:
 requirements:
   build:
     - python
-    - setuptools
+    - ipython
+    - ipykernel
+    - traitlets
+    - notebook
 
   run:
     - python
+    - ipython
+    - ipykernel
+    - traitlets
+    - notebook
+    - mock
+    - nose
 
 test:
   # Python imports
   imports:
-    - mistune
+    - ipywidgets
+    - ipywidgets.widgets
+    - ipywidgets.widgets.tests
 
-  #commands:
+  # commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -51,9 +63,9 @@ test:
     # - nose
 
 about:
-  home: https://github.com/lepture/mistune
-  license:  BSD License
-  summary: 'The fastest markdown parser in pure Python'
+  home: http://ipython.org
+  license: BSD License
+  summary: 'IPython HTML widgets for Jupyter'
 
 # See
 # http://docs.continuum.io/conda/build.html for

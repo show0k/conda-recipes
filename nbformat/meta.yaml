@@ -1,24 +1,25 @@
 package:
-  name: mistune
-  version: !!str 0.7.1
+  name: nbformat
+  version: "4.0.0"
 
 source:
-  fn: mistune-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.1.tar.gz
-  md5: 057bc28bf629d6a1283d680a34ed9d0f
+  fn: nbformat-4.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/n/nbformat/nbformat-4.0.0.tar.gz
+  md5: ce31bb7f34c6a3554dc4a7625fc3033f
 #  patches:
    # List any patch files here
    # - fix.patch
 
 # build:
-  #preserve_egg_dir: True
-  #entry_points:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - mistune = mistune:main
+    # - nbformat = nbformat:main
     #
-    # Would create an entry point called mistune that calls mistune.main()
+    # Would create an entry point called nbformat that calls nbformat.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -28,17 +29,33 @@ source:
 requirements:
   build:
     - python
-    - setuptools
+    - ipython_genutils
+    - traitlets
+    - jsonschema
+    - jupyter_core
 
   run:
     - python
+    - ipython_genutils
+    - traitlets
+    - jsonschema
+    - jupyter_core
 
 test:
   # Python imports
   imports:
-    - mistune
+    - nbformat
+    - nbformat.tests
+    - nbformat.v1
+    - nbformat.v1.tests
+    - nbformat.v2
+    - nbformat.v2.tests
+    - nbformat.v3
+    - nbformat.v3.tests
+    - nbformat.v4
+    - nbformat.v4.tests
 
-  #commands:
+  # commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -51,9 +68,9 @@ test:
     # - nose
 
 about:
-  home: https://github.com/lepture/mistune
-  license:  BSD License
-  summary: 'The fastest markdown parser in pure Python'
+  home: http://jupyter.org
+  license: BSD License
+  summary: 'The Jupyter Notebook format'
 
 # See
 # http://docs.continuum.io/conda/build.html for

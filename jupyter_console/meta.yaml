@@ -1,24 +1,25 @@
 package:
-  name: mistune
-  version: !!str 0.7.1
+  name: jupyter_console
+  version: "4.0.2"
 
 source:
-  fn: mistune-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.1.tar.gz
-  md5: 057bc28bf629d6a1283d680a34ed9d0f
+  fn: jupyter_console-4.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/j/jupyter_console/jupyter_console-4.0.2.tar.gz
+  md5: 73e7b712cabd84625ff0ecc1c9ea698f
 #  patches:
    # List any patch files here
    # - fix.patch
 
 # build:
-  #preserve_egg_dir: True
-  #entry_points:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - mistune = mistune:main
+    # - jupyter_console = jupyter_console:main
     #
-    # Would create an entry point called mistune that calls mistune.main()
+    # Would create an entry point called jupyter_console that calls jupyter_console.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -28,7 +29,6 @@ source:
 requirements:
   build:
     - python
-    - setuptools
 
   run:
     - python
@@ -36,9 +36,10 @@ requirements:
 test:
   # Python imports
   imports:
-    - mistune
+    - jupyter_console
+    - jupyter_console.tests
 
-  #commands:
+  # commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -51,9 +52,9 @@ test:
     # - nose
 
 about:
-  home: https://github.com/lepture/mistune
-  license:  BSD License
-  summary: 'The fastest markdown parser in pure Python'
+  home: https://jupyter.org
+  license: BSD License
+  summary: 'Jupyter terminal console'
 
 # See
 # http://docs.continuum.io/conda/build.html for
