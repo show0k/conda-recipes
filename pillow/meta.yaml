@@ -33,7 +33,6 @@ test:
   imports:
     - PIL
     - PIL.Image
-    - PIL._imagingtk     [linux]
     - PIL._imagingft     [unix]
 
 about:
