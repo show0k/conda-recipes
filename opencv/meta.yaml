@@ -18,12 +18,16 @@ requirements:
         - zlib
         - libpng
         - python
+        - ffmpeg
+
     run:
         - python
         - numpy
         - jpeg
         - zlib
         - libpng
+        - ffmpeg
+
 test:
     imports:
       - cv2
