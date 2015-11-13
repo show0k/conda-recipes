@@ -1,11 +1,11 @@
 
 package:
     name: ffmpeg
-    version: 2.2.4
+    version: 2.8.1
 
 source:
     git_url: git://source.ffmpeg.org/ffmpeg.git
-    git_tag: n2.2.4
+    git_tag: n2.8.1
 
 build:
     number: 0
